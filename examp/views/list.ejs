@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>User list</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>User list</h2>
+            <table class="table" border="1" cellspacing="0" cellpadding="10">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Mobile Number</th>
+                    <th scope="col">createdAt</th>
+                    <th scope="col">updatedAt</th>
+                </tr>
+                </thead>
+                <tbody>
+                <%for (var i=0;i<users.length;i++) {%>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><%= users[i].FirstName %></td>
+                    <td><%= users[i].LastName %></td>
+                    <td><%= users[i].Mobile_Number %></td>
+                    <td><%= users[i].createdAt %></td>
+                    <td><%= users[i].updatedAt %></td>
+                </tr>
+                <%}%>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
